@@ -33,15 +33,16 @@ bottom. The notebook downloads the emotion dataset and pretrained model when
 they are first needed, so Internet access must remain enabled.
 
 The notebook installs a few packages near the beginning. If you are using your
-own environment instead, install the dependencies there before running:
+own environment instead, install the project dependencies before running:
 
 ```bash
-pip install datasets evaluate gradio scikit-learn transformers torch pandas matplotlib seaborn
+pip install -r requirements.txt
 ```
 
 PyTorch's best installation command can depend on your operating system and
 whether you want GPU support; use the [official PyTorch install selector](https://pytorch.org/get-started/locally/)
-if the command above does not give you the setup you need.
+if installing PyTorch from the requirements file does not give you the setup
+you need.
 
 After training and evaluation, the final cells save the fine-tuned model and
 launch the Gradio demo. Write a sentence about how you feel, select a
